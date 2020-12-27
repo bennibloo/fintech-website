@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-}
+  }
 
 nav {
     display: flex;
@@ -33,7 +33,6 @@ nav {
     flex: 0 0 100px;
     margin: 18px 45px;
 }
-
 
 .nav-links {
     display: flex;
@@ -64,6 +63,103 @@ nav {
     margin: 5px;
     transition: all 0.3s ease;
 }
+main {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(/images/manan-u52IpZ4mJ2E-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+    position: relative;
+    width: 65%;
+    margin: 45px auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    }
+    
+    .card-person {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+    padding: 3px;
+    }
+    
+    hr {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .card-img {
+    margin: 20px 18px 0 18px;
+    width: 8%;
+    height: 8%;
+    border-radius: 30%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+    }
+    
+    .card-img:hover {
+        cursor: pointer;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    
+    .headshot {
+        display: inline-block;
+        max-width: 200px;
+        max-height: 200px;
+        border-radius: 5px;
+    }
+    
+
+.card {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  text-align: center;
+  padding: 3px;
+}
+
+.card-img {
+  /* display: inline-block; */
+  margin: 20px 18px 0 18px;
+  width: 8%;
+  height: 8%;
+  border-radius: 30%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+  /* text-align: center; */
+}
+
+.card-img:hover {
+  cursor: pointer;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.event-title {
+  font-weight: bold;
+  text-align: center;
+}
+
+.upcoming-event {
+  background-image: url(images/etienne-delorieux-nrchu00KZ54-unsplash.jpg);
+  
+}
+
+.get-involved {
+  background-image: url(images/dylan-gillis-KdeqA3aTnBY-unsplash.jpg);
+}
+
+.who-are-we {
+  background-image: url(images/annie-spratt-KwxNBjdQae0-unsplash.jpg);
+}
 
 @media screen and (max-width:956px) {
     body {
@@ -78,118 +174,104 @@ nav {
         align-items: center;
     }
     
-.nav-links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background: lightgrey;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-    z-index: 9999;
-}
-
-.nav-links li {
-    opacity: 0;
-}
-
-.burger {
-    display: block;
-    cursor: pointer;
-}
-
-}
-
-.nav-active {
-    transform: translateX(0%);
-}
-
-@media screen and (max-width:415px) {
-.logo > img {
-    position: absolute;
-    transform: translateX(-100px);
-}
-
-.nav-links {
-    top: 8vh;
-}
-}
-
-@media screen and (max-width:321px) {
-
-.nav-links {
-    top: 10vh;
-}
-}
-
-@keyframes navLinkFade{
-    from {
-    opacity: 0;
-    transform: translateX(50px);
-    } to {
-    opacity: 1;
-    transform: translateX(0px);
+    .nav-links {
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background: lightgrey;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+      z-index: 9999;
     }
-}
 
-.toggle .line1 {
-transform: rotate(-45deg) translate(-5px, 6px);
-}
+    .nav-links li {
+        opacity: 0;
+    }
 
-.toggle .line2 {
-opacity: 0;
-}
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
 
-.toggle .line3 {
-transform: rotate(45deg) translate(-5px, -6px);
-}
+  }
 
-main {
-display: flex;
-font-family: "Montserrat", sans-serif;
-background-image: url(/images/manan-u52IpZ4mJ2E-unsplash.jpg);
-background-size: cover;
-background-position: center;
+  .nav-active {
+      transform: translateX(0%);
+  }
 
-}
+  @media screen and (max-width:415px) {
+    .logo > img {
+      position: absolute;
+      transform: translateX(-100px);
+    }
 
-.container {
-/* display: flex; */
-position: relative;
-width: 65%;
-margin: 45px auto;
-background-color: rgba(0, 0, 0, 0.5);
-border-radius: 15px;
-padding: 35px;
-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
-background-position: center;
-background-size: cover;
-background-blend-mode: darken;
-}
+    .nav-links {
+      top: 8vh;
+    }
+  }
 
-.card {
-color: rgb(255, 255, 255);
-font-size: 25px;
-text-align: center;
-padding: 3px;
-}
+  @media screen and (max-width:321px) {
 
-.card-img {
-display: inline-block;
-margin: 20px 18px 0 18px;
-width: 8%;
-height: 8%;
-border-radius: 30%;
--webkit-transition: -webkit-transform .8s ease-in-out;
-transition: transform .8s ease-in-out;
-}
+    .nav-links {
+      top: 10vh;
+    }
+  }
 
-.card-img:hover {
+  @keyframes navLinkFade{
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      } to {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+  
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-}
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: lightgreen;
+  }
+
+  label {
+      color: white;
+  }
+  
