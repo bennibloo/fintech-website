@@ -112,31 +112,16 @@ main {
   text-align: center;
 }
 
-.upcoming-event {
-  background-image: url(images/etienne-delorieux-nrchu00KZ54-unsplash.jpg);
-  
-}
-
-.get-involved {
-  background-image: url(images/dylan-gillis-KdeqA3aTnBY-unsplash.jpg);
-}
-
-.who-are-we {
-  background-image: url(images/annie-spratt-KwxNBjdQae0-unsplash.jpg);
-}
-
-.iframe-box {
-    /* width: 850px;
-    text-align: center;
-    justify-content: center; */
-    
-}
 iframe{
 	display:block;
-	margin:0 auto;
+  margin: 0 auto;
 }
 
 @media screen and (max-width:956px) {
+    iframe {
+      width: 650px;
+    }
+
     body {
         overflow-x: hidden;
     }

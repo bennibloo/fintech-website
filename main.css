@@ -125,7 +125,20 @@ main {
   background-image: url(images/annie-spratt-KwxNBjdQae0-unsplash.jpg);
 }
 
+iframe{
+	display:block;
+  margin: 0 auto;
+}
+
+iframe.inactive {
+  display: none;
+}
+
 @media screen and (max-width:956px) {
+    iframe {
+      width: 400px;
+    }
+  
     body {
         overflow-x: hidden;
     }
@@ -168,7 +181,41 @@ main {
       transform: translateX(0%);
   }
 
+  @media screen and (max-width:721px) {
+    iframe {
+      display: none;
+    }
+
+    iframe.inactive {
+      display:block;
+      margin: 0 auto;
+      width: 300px;
+    }
+  }
+
+  @media screen and (max-width:565px) {
+    iframe {
+      display: none;
+    }
+
+    iframe.inactive {
+      display:block;
+      margin: 0 auto;
+      width: 200px;
+    }
+  }
+
   @media screen and (max-width:415px) {
+    iframe {
+      display: none;
+    }
+
+    iframe.inactive {
+      display:block;
+      margin: 0 auto;
+      width: 100px;
+    }
+    
     .logo > img {
       position: absolute;
       transform: translateX(-100px);
